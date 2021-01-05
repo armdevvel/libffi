@@ -1,0 +1,14 @@
+From 0000000000000000000000000000000000000000 Tue Jan 4 13:03:22 2021
+From: pahaze <pahaze200@protonmail.com>
+Date: Tue, 4 Jan 2021 13:03:22 +0100
+Subject: [PATCH] fix Makefile in armv7-w64-mingw32
+
+Fixes the build error.
+
+diff --git a/armv7-w64-mingw32/Makefile b/armv7-w64-mingw32/Makefile
+
+--- a/armv7-w64-mingw32/Makefile
++++ b/armv7-w64-mingw32/Makefile
+@@ -611,1 +611,1 @@
+-libffi_version_script = -Wl,--version-script,libffi.map
++libffi_version_script =
